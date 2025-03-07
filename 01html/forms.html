@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+<!--
+    <form>
+            <input type="text" placeholder="Enter Name">
+        <br>
+            <input type="number" placeholder="Enter num">
+        <br>
+            <input type="password" placeholder="Enter Password">
+        <br>
+            <input type="email" placeholder="Email">
+        <br>
+            <input type="url" placeholder="Enter link">
+        <br>
+            <input type="search" placeholder="Search">
+        <br>
+            <input type="tel" placeholder="Enter Telephone">
+        <br>
+            <input type="checkbox" >
+        <br>
+            <input type="checkbox" checked>
+        <br>
+            <input type="radio" >
+        <br>
+            <input type="radio" checked>
+        <br>
+            <input type="range">
+        <br>
+            <input type="color">
+        <br>
+            <input type="date" max="2025-01-29" min="2025-01-10">
+        <br>
+            <input type="datetime-local">
+        <br>
+            <input type="time">
+        <br>
+            <input type="month">
+        <br>
+            <input type="week">
+        <br>
+            <input type="file">
+        <br>
+            <input type="image" src="">
+        <br>
+            <input type="button" value="click here">
+        <br>
+            <input type="submit">
+        <br>
+            <input type="reset">
+        <br>
+            <input type="hidden">
+    </form>
+    -->
+<form action="http://localhost:8080/form" method="get">
+        <label> First Name </label><br>
+        <input type="text" placeholder="Enter First Name">
+        <br>
+        <label>Last Name</label><br>
+        <input type="text" placeholder="Enter Last Name">
+        <br>
+        <br>
+       <div>
+           <label for="fullname"> Full Name </label>
+           <br>
+           <input type="text" id="fullname" placeholder="Enter Full Name">
+       </div>
+
+        <br><br>
+
+        <div>
+            <label for="address">Address</label>
+            <br>
+            <textarea
+                    id="address"
+                    placeholder="Enter address">
+            </textarea>
+            <br>
+            <br>
+        </div>
+
+        <div>
+            <label for="address2">Address</label>
+            <br>
+            <textarea
+                    id="address2"
+                    placeholder="Enter address"
+                    rows="5"
+                    cols="10">
+            </textarea>
+        </div>
+
+    <h3>---------------------   Select -------------------------</h3>
+
+    <div>
+        <label for="subject">Subject</label>
+            <select id="subject">
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+                <option value="js">JS</option>
+            </select>
+    </div>
+<br>
+
+    <fieldset>
+        <legend>Status</legend>
+            <input type="radio" name="status"> <label> Married </label>
+            <input type="radio"name="status"> <label> Still Happy </label>
+    </fieldset>
+
+    <br>
+
+    <label for="country">Country</label>
+    <br>
+    <input type="text" id="country" placeholder="Enter Country" list="country-list">
+    <datalist id="country-list">
+        <option value="sl">SRI LANKA</option>
+        <option value="jpn">JAPAN</option>
+        <option value="cn">CHAINA</option>
+    </datalist>
+
+
+    <h3>----------------------------------option group------------------------------------------</h3>
+
+    <select>
+        <optgroup label="Asia">
+            <option value="sl">Sri Lanka</option>
+            <option value="in">India</option>
+            <option value="rs">Russia</option>
+        </optgroup>
+
+        <optgroup label="Europe">
+            <option value="uk">UK</option>
+            <option value="fin">Finland</option>
+            <option value="it">Italy</option>
+        </optgroup>
+
+    </select>
+
+<br>
+   <div>
+       <!--
+    these types work same as the button element
+           <input type="button" value="btn">
+           <input type="reset" value="reset">
+           <input type="submit" value="submit">
+-->
+           <br>
+
+           <button>btn</button>
+           <button type="reset">reset</button>
+           <button type="submit">submit</button>
+       </div>
+
+
+</form>
+
+<h3>----------------------------------option group------------------------------------------</h3>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a">
+        <input type="number" id="b" name="b">
+        <output name="result">50</output>
+
+    </form>
+
+<form>
+    <label for="lname">Last Name</label>
+    <input type="text" name="late-name" id="lname" value="Senethma">
+
+
+    <label for="course">Course</label>
+    <select id="course">
+        <option value="cmjd">CMJD</option>
+        <option value="gdse">GDSE</option>
+        <option value="dep">DEP</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

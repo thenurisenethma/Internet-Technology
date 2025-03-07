@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+</head>
+<body>
+    <!--img tag-->
+<!--        <img src="assets/m.jpeg" title="image m" alt="m image">-->
+<!--        <img src="assets/m.jpeg" title="image m" alt="m image" width="100" height="50">-->
+
+    <!--picture-->
+        <picture>
+            <source media="(min-width:1000px)" srcset="assets/images/l.jpeg" type="image/jpeg" >
+            <source media="(min-width:800px)" srcset="assets/images/m.jpeg" type="image/jpeg" >
+            <source media="(min-width:300px)" srcset="assets/wei.jfif" type="image/jfif">
+            <img src="assets/images/l.jpeg" title="l image" alt="l">
+        </picture>
+</body>
+</html>

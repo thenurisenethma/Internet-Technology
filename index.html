@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+    /*    h2{*/
+    /*        color: deeppink;*/
+    /*        background: gray;*/
+    /*    }*/
+
+    /*    !*Type Selector*!*/
+    /*    h1{*/
+    /*        background: aquamarine;*/
+    /*    }*/
+
+    /*!*ID Selector*!*/
+    /*    #id1{*/
+    /*        background-color: aquamarine;*/
+    /*    }*/
+
+    /*    !*Class Selector*!*/
+    /*    .topic-class{*/
+    /*        background-color: aquamarine;*/
+    /*    }*/
+
+    /*    */
+    /*    *{*/
+    /*        color: blue;*/
+    /*    }*/
+
+    /*    */
+        /*Attribute Selector*/
+        /*case 01
+          [name] {
+            background-color: cornflowerblue;
+        }*/
+
+        /*case 02
+         [name="name2"]{
+            background-color: yellow;
+        }*/
+
+    /*    case 03
+     [href^="https"] {
+            background-color: teal;
+        }*/
+
+    /*case 04
+      [href$="k"]{
+            background-color: blueviolet;
+        }
+    */
+    /*case 05
+    [href*="IJSE"]{
+            background-color: darkblue;
+        }
+    */
+    /* case 07
+     [href~="IJSE"]{
+            background-color: cadetblue;
+        }  */
+
+    /*case 08
+     p[name]{
+            background-color: chartreuse;
+        }
+        */
+
+    /*Pseudo Class Selector*/
+
+    /*    h4:hover{*/
+    /*        color: Red;*/
+    /*    }*/
+    /*    h4:active{*/
+    /*        color: green;*/
+    /*    }*/
+
+
+    /*      a:link{     */
+    /*    color:deeppink;*/
+    /*   }   */
+        /*a:visited{*/
+        /*    color: blue;*/
+        /*}*/
+
+
+        /*  input:focus{    */
+        /*    background-color: blueviolet;*/
+        /*  }       */
+
+    /*li:first-child{ color: deeppink}*/
+    /*li:last-child{color:coral }*/
+    /*li:nth-child(3){*/
+    /*    color: darkorange;*/
+    /*}*/
+
+    /*li:nth-last-child(2){*/
+    /*    background-color: deepskyblue;*/
+    /*}*/
+    /*li:nth-child(odd){*/
+    /*    background-color: cadetblue;*/
+    /*}*/
+    /*li:nth-child(even){*/
+    /*    background-color: yellow;*/
+    /*}*/
+
+    /*li:nth-child(n+5){*/
+    /*    background-color: darkgoldenrod;*/
+    /*}*/
+
+    /*  3*0-1=-1 there is no -1 in the list so ignore it.  3*1-1=2, 3*2-1=5, 3*3-1=8   */
+    /*li:nth-child(3n-1){*/
+    /*    background-color: crimson;*/
+    /*}*/
+
+    /*!* 3*0+1=1  3*1+1=4, 3*2+1=7, 3*3+1=10   *!*/
+    /*li:nth-child(3n+1){*/
+    /*    background-color: aquamarine;*/
+    /*}*/
+
+    /*!* 4*0=0, 4*1=4   *!*/
+    /*li:nth-child(4n){*/
+    /*    background-color: bisque;*/
+    /*}*/
+
+    /*h1::before{*/
+    /*    content: "😊";*/
+    /*}*/
+    /*h1::after{*/
+    /*    content: "😁";*/
+    /*}*/
+
+    /*h1::first-letter{*/
+    /*    color: red;*/
+    /*}*/
+
+    /*p::first-line{*/
+    /*    color: lightskyblue;*/
+    /*}*/
+
+    /*p::selection{*/
+    /*    background-color: midnightblue;*/
+    /*    color: lightskyblue;*/
+    /*}*/
+    /*!*::marker{*!*/
+    /*!*    content:"🌸";*!*/
+    /*!*}*!*/
+
+    /*input ::placeholder{*/
+    /*    color: red;*/
+    /*}*/
+
+    /*input::file-selector-button{*/
+    /*    background-color: lightskyblue;*/
+
+    /*}*/
+    /*input::file-selector-button:hover{*/
+    /*    background-color: lightseagreen;*/
+    /*}*/
+
+    /*     grouping selection*/
+    /*  h1,.myclass,#id5,p{*/
+    /*    color: red;*/
+    /*}*/
+
+
+    /*combinators*/
+
+    /* child combinators*/
+    /*section>h1{*/
+    /*    color: royalblue;*/
+    /*}*/
+
+    /*!* decendant combinators*!*/
+  /*  section h1{*/
+  /*color: hotpink;*/
+  /*}*/
+
+    /*  adjection combinator*/
+    /*h2+h3{*/
+    /*    background-color: royalblue;*/
+    /*}*/
+
+    /*
+     ul li{
+        background-color: yellow;
+    }*/
+
+
+
+    </style>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<!--Inline CSS-->
+<!--    <h1 style="color: aliceblue; background: blue">Welcome to css</h1>-->
+
+<!--    <h2>Welcome to css</h2>-->
+<!--    <h3>Welcome to css</h3>-->
+
+<!--Type selector-->
+<!--    <h1>Type Selector</h1>-->
+
+<!--ID Selector-->
+<!--    <h1 id="id1">ID Selector</h1>-->
+
+<!--Class Selector-->
+<!--    <h1 class="topic-class">Class Selector</h1>-->
+
+<!--Attribute Selector-->
+<!--    <a href="http://IJSE.lk" name="name1">ijse1</a>-->
+<!--    <a href="https://IJSE.lk">ijse2</a>-->
+<!--    <a href="www.IJSE.com">ijse3</a>-->
+<!--    <a href="https://IJSE.com" name="name2">ijse4</a>-->
+<!--    <a href="www.IJSE.solutions">ijse5</a>-->
+<!--    <a href="www.googleIJSEabcd.solutions">ijse6</a>-->
+<!--    <a href="www.google IJSE abcd.solutions">ijse7</a>-->
+
+<!--    <p>  Welcome to Tech World abcd </p>-->
+<!--    <p name="name2"> Welcome to Tech World</p>-->
+
+<!--Pseudo class Selector-->
+<!--    <h4>HELLO WORLD!</h4>-->
+<!--    <a href="https://www.marvel.com/">Marvel</a>-->
+<!--    <a href="https://www.wikipedia.org/">Wiki</a>-->
+<!--    <a href="https://www.wikipedia.org/">xxssddc</a>-->
+
+<!--    <input type="text">-->
+
+<!--<ol>-->
+<!--    <li>Java</li>-->
+<!--    <li>Python</li>-->
+<!--    <li>JS</li>-->
+<!--    <li>HTML</li>-->
+<!--    <li>.Net</li>-->
+<!--    <li>CSS</li>-->
+<!--    <li>JS</li>-->
+<!--</ol>-->
+
+<!--<h1>Hello</h1>-->
+
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. loremAd Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequuntur excepturi fuga illum ipsa nam omnis quidem quod suscipit? Minus non recusandae sit. Architecto, dolorem est eveniet quae quas veritatis.commodi consectetur, consequatur deserunt dolores et laboriosam magnam molestiae natus nostrum odit placeat quae, quaerat quasi reprehenderit repudiandae sed similique <tempora class="lorem"></tempora></p>-->
+
+<!--<ol>-->
+<!--    <li>A</li>-->
+<!--    <li>B</li>-->
+<!--    <li>C</li>-->
+
+<!--</ol>-->
+
+<!--    <input type="text" placeholder="enter your name">-->
+
+<!--    <input type="file">-->
+
+
+<!--grouping selection-->
+<!--    <h1>hello</h1>-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci commodi consequatur deleniti dignissimos, ex, exercitationem harum ipsa minus nam non nostrum quaerat quam quas qui tenetur veritatis voluptas voluptate.</p>-->
+<!--    <h2 class="myclass">world</h2>-->
+<!--    <input id="id5" type="button" placeholder="click">-->
+
+
+<!--Combinators-->
+<!--<section>-->
+<!--    <h1>hello</h1>-->
+<!--    <div><h1>hello</h1></div>-->
+<!--</section>-->
+
+<!--    <section>-->
+<!--        <h1>hello</h1>-->
+<!--        <div><h1>hello</h1></div>-->
+<!--        </section>-->
+
+
+<!--  adjection combinator  there should not be any element h2 h3 , and not even in an element. cause in the head it is h2+h3
+        <h2>hello3</h2>-->
+<!--    <h3>hello4</h3>-->
+
+    <ol>
+        <li>Asia</li>
+        <ul>
+            <li>Sri Lanka</li>
+            <li>India
+                <a href="india.com">india.com</a><a href="india.gov">india gov</a>
+            </li>
+            <li>Japan</li>
+            <li>Russia</li>
+        </ul>
+        <li>Europe</li>
+        <ol>
+            <li>UK</li>
+            <li>Germany</li>
+            <li>Finland</li>
+            <ol>
+                <li>Health sector</li>
+                <h1>    Welcome to Health Sector</h1>
+                <p> Hello world</p>
+            </ol>
+        </ol>
+    </ol>
+
+</body>
+</html>

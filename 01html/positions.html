@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>positions</title>
+<!--    <style>-->
+<!--        main{-->
+<!--            width:800px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            border: solid darkblue;-->
+<!--            position: relative;-->
+
+<!--        }-->
+<!--        section{-->
+<!--            width: 500px;-->
+<!--            height: 1000px;-->
+<!--            border: solid midnightblue;-->
+<!--            position: static;-->
+<!--        }-->
+<!--        div{-->
+<!--            width: 200px;-->
+<!--            /*aspect-ratio: 1/2; !*height is x2 of width*!*/-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: mediumpurple;-->
+<!--            border: 1px solid purple;-->
+
+<!--            /*position: relative;*/-->
+<!--        /*top,bottom,left,right*/-->
+<!--            position: absolute;-->
+<!--            right: 0;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <style>-->
+<!--        section{-->
+<!--            width: 1000px;-->
+<!--            height: 500px;-->
+<!--            border: solid orange;-->
+<!--            position: relative;-->
+<!--        }-->
+
+<!--        div:first-child  {-->
+<!--            width: 100px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: pink;-->
+<!--            position: absolute;-->
+<!--            /*right: 450px;*/-->
+<!--            /*bottom: 200px;*/-->
+<!--            -->
+<!--            /*center*/-->
+<!--            top: 0;-->
+<!--            bottom: 0;-->
+<!--            right: 0;-->
+<!--            left: 0;-->
+<!--            margin: auto;-->
+<!--        }-->
+<!--        div:nth-child(2) {-->
+<!--            width: 100px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: greenyellow;-->
+<!--            position: absolute;-->
+<!--            right:0;-->
+<!--        }-->
+<!--        div:nth-child(3) {-->
+<!--            width: 100px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: blue;-->
+<!--            position: absolute;-->
+<!--            right: 0;-->
+<!--            bottom: 0;-->
+
+<!--        }-->
+<!--        div:nth-child(4) {-->
+<!--            width: 100px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: purple;-->
+<!--            position: absolute;-->
+<!--            left:0;-->
+<!--        }-->
+<!--        div:nth-child(5) {-->
+<!--            width: 100px;-->
+<!--            aspect-ratio: 1/1;-->
+<!--            background-color: coral;-->
+<!--            position: absolute;-->
+<!--            bottom:0;-->
+<!--        }-->
+<!--    </style>-->
+    <link rel="01html/assets/normalize.css" >
+
+    <style>
+        body>div>div>div{
+            width: 20px;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+        body>div>div>div:first-child{
+            background-color: greenyellow;
+            border-top-left-radius: 100%;
+        }
+        body>div>div>div:nth-child(2){
+            background-color: greenyellow;
+            border-bottom-right-radius: 100%;
+        }
+        body>div>div{
+            width: 20%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+        }
+        body>div{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        div:first-child{
+
+            background-color:yellow;;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        div:nth-child(2){
+
+            background-color: coral;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        div:nth-child(3){
+
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        div:nth-child(4){
+
+            background-color: pink;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+<!--<main>-->
+<!--    <section>-->
+<!--        <div>-->
+<!--        </div>-->
+
+<!--        <div>-->
+<!--        </div>-->
+
+<!--        <div>-->
+<!--        </div>-->
+
+<!--        <div>-->
+<!--        </div>-->
+
+<!--        <div>-->
+<!--        </div>-->
+
+<!--    </section>-->
+<!--</main>-->
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div>        <div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+
+    <div>        <div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+
+    <div>        <div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+
+
+</body>
+</html>
