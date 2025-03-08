@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: space-around;
+            height: 500px;
+            aspect-ratio: 1/1;
+            border: solid purple;
+        }
+        section>div{
+            height: 200px;
+            aspect-ratio: 1/1;
+            border: solid lightskyblue;
+            background: plum;
+        }
+        section>div:first-child{
+            align-self: start;
+            justify-self: left;
+        }
+
+        section>div:nth-child(2){
+            align-self: center;
+            justify-self: center;
+        }
+        section>div:nth-child(3){
+            align-self: end;
+        }
+        section>div:nth-child(4){
+            align-self: center;
+            justify-self: center;
+          }
+        section>div:nth-child(5){
+            align-self: start;
+            justify-self: start;
+        }
+        section>div:nth-child(6){
+              align-self: center;
+              justify-self: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

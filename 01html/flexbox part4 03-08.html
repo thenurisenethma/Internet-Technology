@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex box</title>
+    <style>
+        section{
+            border: solid lightskyblue;
+            width: 200px;
+            aspect-ratio: 1/1;
+            display: flex;
+        }
+        section>div{
+            background: plum;
+            width: 50px;
+            aspect-ratio: 1/1;
+        }
+        section>div:first-child{
+            align-self: center;
+        }
+        section>div:nth-child(2){
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
